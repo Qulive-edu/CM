@@ -1,0 +1,7 @@
+server:
+  host: "localhost"
+  port: 8080
+  enabled: true
+  features:
+    - "http"
+    - "https"

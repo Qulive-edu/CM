@@ -1,0 +1,4 @@
+def server_host = @"localhost";
+def server_port = 8080;
+def server_enabled = True;
+def server_features = { @"http", @"https" };
