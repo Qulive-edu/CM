@@ -5,3 +5,7 @@ server:
   features:
     - "http"
     - "https"
+variableA: 10
+variableB: .[ + variableA 5 ]
+variableC: .[ pow variableB 2 ]
+variableD: .[ chr 65 ]

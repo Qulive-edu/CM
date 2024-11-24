@@ -2,3 +2,7 @@ def server_host = @"localhost";
 def server_port = 8080;
 def server_enabled = True;
 def server_features = { @"http", @"https" };
+def variableA = 10;
+def variableB = 15;
+def variableC = 225;
+def variableD = A;
