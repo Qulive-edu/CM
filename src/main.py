@@ -3,18 +3,16 @@ import sys
 import re
 
 def validate_name(name):
-    # Check the name matches the defined regex pattern for names
     return re.fullmatch(r'[_a-zA-Z]+', name) is not None
 
 def evaluate_expression(expression, context):
-    """Evaluate the expression using the current context."""
     # Remove the leading `.[` and trailing `]`
     expression = expression[2:-1].strip()
     
     # Split the expression into parts
-    tokens = expression.split()
-    operator = tokens[0]  # The first token is the operator
-    operands = tokens[1:]  # The remaining are operands
+    parts = expression.split()
+    operator = parts[0]  # The first token is the operator
+    operands = parts[1:]  # The remaining are operands
 
     # Map the operands to their evaluated values
     evaluated_operands = []
